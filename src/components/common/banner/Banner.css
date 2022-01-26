@@ -1,0 +1,48 @@
+.banner-container {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+  background-color: #fff;
+}
+.banner-container::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  bottom: 5px;
+  left: 150px;
+  right: 150px;
+  top: 90%;
+  background: #777;
+  -webkit-box-shadow: 0 0 30px 17px #999;
+  -moz-box-shadow: 0 0 30px 17px #999;
+  box-shadow: 0 0 30px 17px #999;
+  border-radius: 100px/10px;
+}
+.banner-container .description {
+  flex-grow: 1;
+  text-align: center;
+}
+.banner-container .description button {
+  background-color: darkred;
+  border-width: 0px;
+  color: #fff;
+  padding: 10px;
+}
+.banner-container img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.banner-container h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.banner-container h3 {
+  font-size: 14px;
+}
+@media screen and (max-width: 488px) {
+  .banner-container .img-container {
+    max-width: 200px;
+  }
+}

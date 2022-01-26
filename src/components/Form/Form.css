@@ -1,0 +1,53 @@
+.login-conatiner {
+  padding: 10px;
+  display: flex;
+  margin: 0 10%;
+  margin-top: 100px;
+}
+.login-conatiner > div {
+  flex-grow: 1;
+}
+.login-conatiner .login-form button {
+  background-color: #8b0000;
+  color: #fff;
+  width: 100%;
+  border-width: 0px;
+  border-radius: 0px;
+  padding: 10px;
+}
+.login-conatiner .login-form .form-group > label {
+  bottom: 34px;
+  position: relative;
+  background-color: white;
+  color: rgb(141, 140, 140);
+  padding: 0px 5px 0px 5px;
+  font-size: 1.1em;
+  transition: 0.2s;
+  pointer-events: none;
+}
+.login-conatiner .login-form .form-control {
+  border-width: 0px;
+  border-bottom: 2px solid lightgray;
+  border-radius: 0px;
+  box-shadow: none;
+}
+.login-conatiner .login-form .form-control:focus {
+  border-color: lightseagreen;
+}
+.login-conatiner .login-form .form-control:focus ~ label {
+  bottom: 55px;
+  color: lightseagreen;
+  font-size: 12px;
+}
+
+.login-conatiner .login-form .form-control:valid ~ label {
+  bottom: 55px;
+  color: lightseagreen;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 486px) {
+  .login-conatiner {
+    flex-direction: column;
+  }
+}

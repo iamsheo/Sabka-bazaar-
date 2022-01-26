@@ -1,0 +1,30 @@
+.imageSlider {
+  position: relative;
+}
+.imageSlider::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  bottom: 5px;
+  left: 150px;
+  right: 150px;
+  top: 90%;
+  background: #777;
+  -webkit-box-shadow: 0 0 30px 17px #999;
+  -moz-box-shadow: 0 0 30px 17px #999;
+  box-shadow: 0 0 30px 17px #999;
+  border-radius: 100px/10px;
+}
+
+.carousel-indicators button {
+  background-color: gray !important;
+  border-radius: 50% !important;
+  width: 8px !important;
+  height: 8px !important;
+}
+.carousel-control-prev span {
+  background-color: gray;
+}
+.carousel-control-next span {
+  background-color: gray;
+}
